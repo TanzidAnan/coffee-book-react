@@ -1,14 +1,17 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 
 const Categories = ({categories}) => {
     return (
-        <div>
+        <div className="mt-10">
             <div role="tablist" className="tabs tabs-lifted">
-                {categories.map((categorie ,idx) =><Link key={idx}
-                 to={`/categorie/${categorie.category}`} role="tab" className="tab">
+                {categories.map((categorie ,idx) =>
+                <NavLink key={idx}
+                 to={`/categorie/${categorie.category}`} role="tab"
+                  className={({isActive}) => `tab ${isActive?'tab-active':''}`}
+                 >
                 {categorie.category}
-                </Link>)}
+                </NavLink>)}
             </div>
         </div>
     );
