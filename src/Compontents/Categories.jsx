@@ -8,7 +8,7 @@ const Categories = ({categories}) => {
                 {categories.map((categorie ,idx) =>
                 <NavLink key={idx}
                  to={`/categorie/${categorie.category}`} role="tab"
-                  className={({isActive}) => `tab ${isActive?'tab-active':''}`}
+                  className={({isActive}) => `tab text-2xl ${isActive?'tab-active':''}`}
                  >
                 {categorie.category}
                 </NavLink>)}
