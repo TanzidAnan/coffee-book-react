@@ -3,14 +3,19 @@ import Card from "./Card";
 import { useEffect, useState } from "react";
 
 const CoffeeCard = () => {
-    const [coffees,setCoffees] =useState([])
-    const data =useLoaderData();
-    const {category} = useParams();
+    const [coffees, setCoffees] = useState([])
+    const data = useLoaderData();
+    const { category } = useParams();
 
-    useEffect( () =>{
-        const filterByCatergory =[...data].filter(coffee => coffee.category ===category);
-        setCoffees(filterByCatergory)
-    },[category,data])
+    useEffect(() => {
+        if (category) {
+            const filterByCatergory = [...data].filter(coffee => coffee.category === category);
+            setCoffees(filterByCatergory)
+        }
+        else{
+            setCoffees(data.slice(0,6))
+        }
+    }, [category, data])
 
     // console.log(data)
     // console.log(category)
