@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const NavBar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div className="navbar backdrop-blur-xl">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -23,7 +23,7 @@ const NavBar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 font-bold shadow">
                             <Link to='/'><li><a>Home</a></li></Link>
                             <Link to='/coffees'><li><a>Coffees</a></li></Link>
                             <Link to='/dashboard'><li><a>Dashboard</a></li></Link>
@@ -32,10 +32,10 @@ const NavBar = () => {
                     <Link to='/' className=" text-xl">Cook_Book</Link>
                 </div>
                 <div className="navbar-end hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 font-semibold">
                         <Link to='/'><li><a>Home</a></li></Link>
-                        <Link to='/coffees'><li><a>Coffees</a></li></Link>
-                        <Link to='/dashboard'><li><a>Dashboard</a></li></Link>
+                        <NavLink to='/coffees'><li><a>Coffees</a></li></NavLink>
+                        <NavLink to='/dashboard'><li><a>Dashboard</a></li></NavLink>
 
                     </ul>
                 </div>
