@@ -1,4 +1,5 @@
 
+// eslint-disable-next-line react/prop-types
 const Heading = ({title,subTitle}) => {
     return (
         <div className="text-center mt-4">
