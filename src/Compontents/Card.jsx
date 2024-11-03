@@ -1,7 +1,7 @@
 
 const Card = ({coffee}) => {
     const {name,image,category,ingredients,nutrition_info,origin,type,rating,popularity} =coffee;
-    console.log(coffee)
+    // console.log(coffee)
  
     return (
         <div>
