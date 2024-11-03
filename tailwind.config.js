@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImg:{
+        Banner:"url('./dist/assets/banner.jpg')",
+      }
+    },
   },
   plugins: [
     // eslint-disable-next-line no-undef
