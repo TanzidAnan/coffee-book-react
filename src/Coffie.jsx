@@ -10,7 +10,7 @@ const Coffie = () => {
             <div>
                 <h1 className="text-5xl font-bold text-center my-4">{detlesId.category}</h1>
                <div >
-               <img className="h-[60vh] w-full" src={detlesId.image} alt="" />
+               <img className="h-[60vh] w-full rounded-2xl" src={detlesId.image} alt="" />
                </div>
             </div>
         </div>
