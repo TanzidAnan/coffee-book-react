@@ -15,6 +15,9 @@ const Coffie = () => {
                 <div className="my-7 border-2 py-3 px-2">
                     <p>{detlesId.description}</p>
                 </div>
+                <div className="text-6xl font-bold text-center">
+                    <p>{detlesId.name}</p>
+                </div>
             </div>
         </div>
     );
