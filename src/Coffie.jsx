@@ -12,7 +12,7 @@ const Coffie = () => {
                 <div >
                     <img className="h-[60vh] w-full rounded-2xl" src={detlesId.image} alt="" />
                 </div>
-                <div className="my-7 border-2">
+                <div className="my-7 border-2 py-3 px-2">
                     <p>{detlesId.description}</p>
                 </div>
             </div>
