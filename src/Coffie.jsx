@@ -9,9 +9,12 @@ const Coffie = () => {
         <div className="flex justify-center items-center">
             <div>
                 <h1 className="text-5xl font-bold text-center my-4">{detlesId.category}</h1>
-               <div >
-               <img className="h-[60vh] w-full rounded-2xl" src={detlesId.image} alt="" />
-               </div>
+                <div >
+                    <img className="h-[60vh] w-full rounded-2xl" src={detlesId.image} alt="" />
+                </div>
+                <div>
+                    <p>{detlesId.description}</p>
+                </div>
             </div>
         </div>
     );
