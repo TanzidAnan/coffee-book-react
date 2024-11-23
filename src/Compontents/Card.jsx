@@ -6,7 +6,7 @@ const Card = ({ coffee }) => {
 
     return (
         <div>
-            <Link to={`coffee/${id}`}>
+            <Link to={`/coffee/${id}`}>
                 <div className="card card-compact bg-base-100 w-96 shadow-xl">
                     <figure className="h-[30vh] w-full">
                         <img
