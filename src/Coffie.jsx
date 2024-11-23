@@ -9,8 +9,8 @@ const Coffie = () => {
         <div className="flex justify-center items-center">
             <div>
                 <h1>{detlesId.category}</h1>
-               <div>
-               <img src={detlesId.image} alt="" />
+               <div >
+               <img className="h-[60vh] w-full" src={detlesId.image} alt="" />
                </div>
             </div>
         </div>
