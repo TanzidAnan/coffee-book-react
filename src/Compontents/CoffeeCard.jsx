@@ -7,7 +7,6 @@ const CoffeeCard = () => {
     const naveget =useNavigate()
     const data = useLoaderData();
     const { category } = useParams();
-    console.log(category)
 
     useEffect(() => {
         if (category) {
