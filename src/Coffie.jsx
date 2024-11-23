@@ -6,8 +6,8 @@ const Coffie = () => {
     const detlesId =data.find(coffes => coffes.id === parseInt(id))
     console.log(detlesId)
     return (
-        <div>
-            <h1>tanizd</h1>
+        <div className="flex justify-center items-center">
+            <h1>{detlesId.category}</h1>
         </div>
     );
 };
