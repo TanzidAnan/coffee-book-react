@@ -22,6 +22,9 @@ const DashBoard = () => {
     return (
         <div>
             <h1>DeshBoards {productList.length}</h1>
+            {
+                productList.map()
+            }
         </div>
     );
 };
