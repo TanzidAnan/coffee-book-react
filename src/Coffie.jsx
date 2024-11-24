@@ -19,7 +19,7 @@ const Coffie = () => {
                     <p>{detlesId.name}</p>
                     <h1 className="text-center flex ">:{detlesId.popularity}</h1>
                 </div>
-                <button className="btn mt-6">Add</button>
+                <button className="btn mt-6 btn-block bg-yellow-200 font-bold">Add</button>
             </div>
         </div>
     );
