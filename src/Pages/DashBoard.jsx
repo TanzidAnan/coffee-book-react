@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStrogeData } from "../Utlits/Stroge";
+import Product from "./Product";
 
 
 const DashBoard = () => {
@@ -23,7 +24,7 @@ const DashBoard = () => {
         <div>
             <h1>DeshBoards {productList.length}</h1>
             {
-                productList.map(product =><Product)
+                productList.map(product =><Product key={product.id} product={product}></Product>)
             }
         </div>
     );
