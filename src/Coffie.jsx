@@ -4,8 +4,8 @@ const Coffie = () => {
     const data = useLoaderData();
     const { id } = useParams();
     const detlesId = data.find(coffes => coffes.id === parseInt(id))
-    const hendleAddData =() =>{
-        console.log(465465)
+    const hendleAddData =(detlesId) =>{
+        console.log(detlesId)
     }
 
 
@@ -23,7 +23,7 @@ const Coffie = () => {
                     <p>{detlesId.name}</p>
                     <h1 className="text-center flex ">:{detlesId.popularity}</h1>
                 </div>
-                <button onClick={hendleAddData} className="btn mt-6 btn-block bg-yellow-200 font-bold">Add</button>
+                <button onClick={() =>hendleAddData(detlesId)} className="btn mt-6 btn-block bg-yellow-200 font-bold">Add</button>
             </div>
         </div>
     );
