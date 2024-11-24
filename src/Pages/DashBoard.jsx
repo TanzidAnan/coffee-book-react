@@ -10,7 +10,8 @@ const DashBoard = () => {
 
     useEffect(() =>{
         const strogeProduct =getStrogeData();
-        console.log(strogeProduct)
+        const productStrogeCardList =strogeProduct.map(id => parseInt(id));
+        console.log(productStrogeCardList)
     },[])
 
     return (
