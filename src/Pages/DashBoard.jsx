@@ -12,7 +12,9 @@ const DashBoard = () => {
         const strogeProduct =getStrogeData();
         const productStrogeCardList =strogeProduct.map(id => parseInt(id));
         console.log(productStrogeCardList)
-    },[])
+        const productCard =allData.filter(product =>productStrogeCardList.includes(product.id))
+        console.log(productCard)
+    },[allData])
 
     return (
         <div>
