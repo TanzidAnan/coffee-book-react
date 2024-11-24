@@ -6,16 +6,16 @@ import Product from "./Product";
 
 const DashBoard = () => {
 
-    const allData =useLoaderData();
-    const [productList,setProductList] =useState([]);
+    const allData = useLoaderData();
+    const [productList, setProductList] = useState([]);
 
-    useEffect(() =>{
-        const strogeProduct =getStrogeData();
-        const productStrogeCardList =strogeProduct.map(id => parseInt(id));
+    useEffect(() => {
+        const strogeProduct = getStrogeData();
+        const productStrogeCardList = strogeProduct.map(id => parseInt(id));
         console.log(productStrogeCardList)
-        const productCard =allData.filter(product =>productStrogeCardList.includes(product.id))
+        const productCard = allData.filter(product => productStrogeCardList.includes(product.id))
         setProductList(productCard)
-    },[allData])
+    }, [allData])
 
     console.log(productList)
 
@@ -23,9 +23,11 @@ const DashBoard = () => {
     return (
         <div>
             <h1>DeshBoards {productList.length}</h1>
-            {
-                productList.map(product =><Product key={product.id} product={product}></Product>)
-            }
+            <div>
+                {
+                    productList.map(product => <Product key={product.id} product={product}></Product>)
+                }
+            </div>
         </div>
     );
 };
