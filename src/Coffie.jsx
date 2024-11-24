@@ -6,7 +6,7 @@ const Coffie = () => {
     const { id } = useParams();
     const detlesId = data.find(coffes => coffes.id === parseInt(id))
     const hendleAddData =(detlesId) =>{
-        AddToStrogeCardList(detlesId)
+        AddToStrogeCardList(detlesId.id)
     }
 
 
