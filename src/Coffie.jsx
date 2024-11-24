@@ -1,11 +1,13 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { AddToStrogeCardList } from "./Utlits/Stroge";
 
 const Coffie = () => {
     const data = useLoaderData();
     const { id } = useParams();
     const detlesId = data.find(coffes => coffes.id === parseInt(id))
     const hendleAddData =(detlesId) =>{
-        console.log(detlesId)
+        console.log(detlesId.id);
+        AddToStrogeCardList(detlesId)
     }
 
 
