@@ -23,7 +23,7 @@ const DashBoard = () => {
     return (
         <div>
             <h1>DeshBoards {productList.length}</h1>
-            <div>
+            <div className="grid grid-cols-4 gap-7">
                 {
                     productList.map(product => <Product key={product.id} product={product}></Product>)
                 }

@@ -4,7 +4,7 @@ const Product = ({ product }) => {
     const {image,name,category,type,rating} =product
     return (
         <div>
-            <div className="card card-compact bg-base-100 w-96 shadow-xl">
+            <div className="card card-compact bg-base-100  shadow-xl">
                 <figure className="h-[30vh] w-full">
                     <img
                         className="h-full w-full"
