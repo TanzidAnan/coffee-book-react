@@ -16,12 +16,12 @@ const DashBoard = () => {
         setProductList(productCard)
     },[allData])
 
-    
+    console.log(productList)
 
 
     return (
         <div>
-            <h1>DeshBoards</h1>
+            <h1>DeshBoards {productList.length}</h1>
         </div>
     );
 };
