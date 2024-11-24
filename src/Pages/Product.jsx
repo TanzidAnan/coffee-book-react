@@ -1,7 +1,7 @@
 
 const Product = ({ product }) => {
     console.log(product)
-    co
+    const {image,name,category,type,rating} =product
     return (
         <div>
             <div className="card card-compact bg-base-100 w-96 shadow-xl">
