@@ -17,6 +17,9 @@ const Product = ({ product }) => {
                     <p>type: {type}</p>
                     <p>type: {rating}</p>
                 </div>
+                <div>
+                    <button className="btn btn-sm">Delete</button>
+                </div>
             </div>
         </div>
     );
