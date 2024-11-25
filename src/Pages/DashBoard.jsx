@@ -8,6 +8,7 @@ const DashBoard = () => {
 
     const allData = useLoaderData();
     const [productList, setProductList] = useState([]);
+   
 
     useEffect(() => {
         const strogeProduct = getStrogeData();
