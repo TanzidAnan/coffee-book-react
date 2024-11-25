@@ -4,7 +4,7 @@ const Product = ({ product }) => {
     // console.log(product)
     const {image,name,category,type,rating,id} =product;
     const hendleDelete =(id) =>{
-        console.log(56565,id)
+        localStorage.removeItem(id)
     }
     return (
         <div>

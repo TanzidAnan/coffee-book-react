@@ -21,4 +21,8 @@ const AddToStrogeCardList =(id) =>{
     }
 }
 
+const removeItem =() =>{
+    
+}
+
 export {AddToStrogeCardList,getStrogeData}
