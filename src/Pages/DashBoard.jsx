@@ -18,7 +18,7 @@ const DashBoard = () => {
         setProductList(productCard)
     }, [allData])
 
-    console.log(productList)
+    // console.log(productList)
 
 
     return (

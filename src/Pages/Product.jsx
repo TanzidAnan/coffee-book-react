@@ -1,6 +1,6 @@
 
 const Product = ({ product }) => {
-    console.log(product)
+    // console.log(product)
     const {image,name,category,type,rating} =product
     return (
         <div>
