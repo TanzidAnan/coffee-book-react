@@ -21,8 +21,9 @@ const AddToStrogeCardList =(id) =>{
     }
 }
 
-const removeItem =() =>{
-    
+const removeItem =(id) =>{
+    console.log(id)
+    localStorage.removeItem(parseFloat(id))
 }
 
-export {AddToStrogeCardList,getStrogeData}
+export {AddToStrogeCardList,getStrogeData,removeItem}

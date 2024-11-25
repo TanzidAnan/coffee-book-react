@@ -1,10 +1,12 @@
 /* eslint-disable react/prop-types */
 
+import { removeItem } from "../Utlits/Stroge";
+
 const Product = ({ product }) => {
     // console.log(product)
     const {image,name,category,type,rating,id} =product;
     const hendleDelete =(id) =>{
-        localStorage.removeItem(id)
+        removeItem(id)
     }
     return (
         <div>
