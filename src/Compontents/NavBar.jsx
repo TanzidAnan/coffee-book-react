@@ -38,7 +38,7 @@ const NavBar = () => {
                     <ul className="menu menu-horizontal px-1 font-semibold">
                         <Link to='/'><li><a>Home</a></li></Link>
                         <NavLink to='/coffees'><li><a>Coffees</a></li></NavLink>
-                        <NavLink to='/dashboard'><li><a>Dashboard {data.length}</a></li></NavLink>
+                        <NavLink to='/dashboard'><li><a>Dashboard <div className="-mt-2 text-lg font-bold text-green-400">{data.length}</div></a></li></NavLink>
 
                     </ul>
                 </div>
