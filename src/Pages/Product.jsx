@@ -1,7 +1,10 @@
 
 const Product = ({ product }) => {
     // console.log(product)
-    const {image,name,category,type,rating} =product
+    const {image,name,category,type,rating} =product;
+    const hendleDelete =() =>{
+        
+    }
     return (
         <div>
             <div className="card card-compact bg-base-100  shadow-xl">
@@ -17,8 +20,8 @@ const Product = ({ product }) => {
                     <p>type: {type}</p>
                     <p>type: {rating}</p>
                 </div>
-                <div>
-                    <button className="btn btn-sm">Delete</button>
+                <div className="flex justify-center py-3">
+                    <button onClick={hendleDelete} className="btn btn-sm text-red-500">Delete</button>
                 </div>
             </div>
         </div>
