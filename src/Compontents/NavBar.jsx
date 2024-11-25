@@ -1,4 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
+import { getStrogeData } from "../Utlits/Stroge";
+const data =getStrogeData();
+console.log(data)
 
 
 const NavBar = () => {
@@ -26,7 +29,7 @@ const NavBar = () => {
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 font-bold shadow">
                             <Link to='/'><li><a>Home</a></li></Link>
                             <Link to='/coffees'><li><a>Coffees</a></li></Link>
-                            <Link to='/dashboard'><li><a>Dashboard</a></li></Link>
+                            <Link to='/dashboard'><li><a>Dashboard {data.length}</a></li></Link>
                         </ul>
                     </div>
                     <Link to='/' className=" text-xl btn">Cook_Book</Link>
