@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 
 const Product = ({ product }) => {
     // console.log(product)
-    const {image,name,category,type,rating} =product;
-    const hendleDelete =() =>{
-        
+    const {image,name,category,type,rating,id} =product;
+    const hendleDelete =(id) =>{
+        console.log(56565,id)
     }
     return (
         <div>
@@ -21,7 +22,7 @@ const Product = ({ product }) => {
                     <p>type: {rating}</p>
                 </div>
                 <div className="flex justify-center py-3">
-                    <button onClick={hendleDelete} className="btn btn-sm text-red-500">Delete</button>
+                    <button onClick={() =>hendleDelete(id)} className="btn btn-sm text-red-500">Delete</button>
                 </div>
             </div>
         </div>
