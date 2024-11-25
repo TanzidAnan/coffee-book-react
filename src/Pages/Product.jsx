@@ -1,12 +1,16 @@
 /* eslint-disable react/prop-types */
 
-import { removeItem } from "../Utlits/Stroge";
+import { getStrogeData, removeItem } from "../Utlits/Stroge";
 
 const Product = ({ product }) => {
     // console.log(product)
     const {image,name,category,type,rating,id} =product;
     const hendleDelete =(id) =>{
-        removeItem(id)
+        const data =getStrogeData();
+        console.log(data)
+        const number =data.filter(num => num != id);
+
+        removeItem(number)
     }
     return (
         <div>
